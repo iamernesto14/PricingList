@@ -31,7 +31,6 @@
 
 body {
   font-family: var(--ff-primary);
-  height: 100vh;
 }
 
 .intro {
@@ -41,6 +40,7 @@ body {
   flex-direction: column;
   max-width: 90%;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .intro h1 {
@@ -114,6 +114,16 @@ button {
 
 .special .card__price span {
   color: var(--accent-clr);
+}
+
+footer p {
+  margin: var(--spacer-md);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-b);
+}
+
+footer p span {
+  color: var(--secondary-clr-light);
 }
 
 @media screen and (max-width: 768px) {
