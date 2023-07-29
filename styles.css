@@ -1,0 +1,129 @@
+:root {
+  --ff-primary: "Fira", sans-serif;
+
+  --primary-clr: #225560;
+  --secondary-clr: #36213e;
+  --secondary-clr-light: #554971;
+  --accent-clr: #ef6461;
+
+  --fs-2: 5rem;
+  --fs-3: 2rem;
+  --fs-4: 3rem;
+  --fs-p: 1rem;
+
+  --fw-n: 300;
+  --fw-md: 600;
+  --fw-b: 800;
+
+  --spacer: 1rem;
+  --spacer-md: calc(var(--spacer) * 2);
+  --spacer-lg: calc(var(--spacer) * 3);
+
+  --shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  --br: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  height: 100vh;
+  
+}
+
+.intro {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  font-size: var(--fs-2);
+  text-align: left;
+  margin-bottom: var(--spacer-md);
+  font-weight: var(--fw-n);
+}
+
+h2 {
+  font-size: var(--fs-p);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--primary-clr);
+  width: 100%;
+  padding: var(--spacer) 0;
+  color: #fff;
+}
+
+.main__card {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: var(--spacer-md);
+}
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  /* gap: var(--spacer-md); */
+  box-shadow: var(--shadow);
+  border-radius: var(--br);
+  overflow: hidden;
+}
+
+.card__description {
+  display: flex;
+  gap: var(--spacer);
+  flex-direction: column;
+  padding: var(--spacer-md) 0;
+}
+
+.card__content {
+  padding: var(--spacer-md);
+}
+
+button {
+  padding: 0.8rem var(--spacer);
+  text-transform: uppercase;
+  font-weight: var(--fw-b);
+  background-color: var(--primary-clr);
+  color: #fff;
+  border-radius: var(--br);
+  border: none;
+}
+
+.card__description span {
+  font-weight: var(--fw-md);
+}
+
+.card__price span {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-md);
+  color: var(--primary-clr);
+}
+
+.special {
+  background-color: var(--accent-clr);
+}
+
+.special .card__price span {
+  color: var(--accent-clr);
+}
+
+
+@media screen and (max-width: 768px) {
+  .main__card {
+    flex-direction: column;
+  }
+
+  .intro h1 {
+    font-size: var(--fs-4);
+    font-weight: var(--fw-n);
+  }
+}
