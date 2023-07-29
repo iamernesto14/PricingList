@@ -6,7 +6,7 @@
   --secondary-clr-light: #554971;
   --accent-clr: #ef6461;
 
-  --fs-2: 5rem;
+  --fs-2: 4rem;
   --fs-3: 2rem;
   --fs-4: 3rem;
   --fs-p: 1rem;
@@ -32,11 +32,10 @@
 body {
   font-family: var(--ff-primary);
   height: 100vh;
-  
 }
 
 .intro {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -108,14 +107,14 @@ button {
   color: var(--primary-clr);
 }
 
-.special {
+.special h2,
+.special button {
   background-color: var(--accent-clr);
 }
 
 .special .card__price span {
   color: var(--accent-clr);
 }
-
 
 @media screen and (max-width: 768px) {
   .main__card {
